@@ -1,0 +1,21 @@
+btn {
+    display: inline-block;
+    line-height: 1;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    padding: 17px;
+    transition: all .09s ease-out;
+}
+
+.btn-accent {
+    background-color: transparent;
+    width: 370px;
+    height: 85px;
+    border: 2px solid #FFFFFF;
+}
+
+.btn-accent:hover {
+    background-color: #FFFFFF;
+    color: black;
+}

@@ -1,0 +1,25 @@
+@import "../libs/bootstrap5/bootstrap-reboot.min.css";
+
+/*Normalize tipo*/
+
+@import "../libs/bootstrap5/bootstrap-grid.min.css";
+
+/*setka bootstrap*/
+
+@import "../fonts/icomoon/style.css";
+@import "components/header.css";
+@import "components/navbar.css";
+@import "components/section.css";
+@import "components/other.css";
+@import "components/bootstrap-skins.css";
+@import "components/button.css";
+@import "components/footer.css";
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
