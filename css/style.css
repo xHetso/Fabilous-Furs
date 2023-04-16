@@ -1,11 +1,5 @@
-@import "../libs/bootstrap5/bootstrap-reboot.min.css";
-
-/*Normalize tipo*/
-
-@import "../libs/bootstrap5/bootstrap-grid.min.css";
-
-/*setka bootstrap*/
-
+@import "../libs/bootstrap5/bootstrap-reboot.min.css"; /*Normalize tipo*/
+@import "../libs/bootstrap5/bootstrap-grid.min.css"; /*setka bootstrap*/
 @import "../fonts/icomoon/style.css";
 @import "components/header.css";
 @import "components/navbar.css";
@@ -14,12 +8,71 @@
 @import "components/bootstrap-skins.css";
 @import "components/button.css";
 @import "components/footer.css";
+
+
 h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    /* identical to box height */
-    color: #FFFFFF;
+    font-size: 42px;
+    line-height: 51px;
+    color: #000000;
+}
+
+h2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.product__info{
+    display: flex;
+    justify-content: space-between;
+}
+.product__img__collection{
+    width: 330px;
+    height: 495px;
+    margin-bottom: 25px;
+}
+.product__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.product__price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.bg__image__banner1{
+    position: absolute;
+    top: 0;
+    left: 707px;
+    z-index: -1;
+}
+.bg__image__banner1__middle{
+    top: 50%;
+    transform: translateY(-50%);
+}
+h2.collection_name1 {
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.bg__image__banner1__right{
+    left: unset !important;
 }
