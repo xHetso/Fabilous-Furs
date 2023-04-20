@@ -71,11 +71,18 @@ a {
     color: rgb(255, 255, 255) !important;
 }
 /*мои*/
+section.section__navbar {
+    position: fixed;
+    z-index: 99999999999999999;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .navbar {
-    background-color: #000000; /* Цвет фона */
     display: flex;
     justify-content: space-between; /* Расположение элементов по горизонтали */
     align-items: center; /* Расположение элементов по вертикали */
+    height: 90px;
   }
   
   /* Стили для логотипа */
@@ -89,11 +96,9 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 20px;
   }
   
-  .navbar li {
-    margin-right: 20px; /* Отступ между элементами меню */
-  }
   
   .navbar a {
     text-decoration: none; /* Убираем подчеркивание */
@@ -105,6 +110,9 @@ a {
     color: #555; /* Цвет текста при наведении курсора */
   }
 /*navbar*/
+.section__navbar.scrolled {
+    background-color: #000000; /* новый цвет навбара */
+  }
 .menu-btn {
 	width: 30px;
 	height: 30px;
@@ -123,17 +131,17 @@ a {
 	transition: all 0.5s;
 }
 .menu-btn span:nth-of-type(2) {
-	top: calc(50% - 7px);
+	top: calc(50% - 10px);
 }
 .menu-btn span:nth-of-type(3) {
-	top: calc(50% + 7px);
+	top: calc(50% + 10px);
 }
 
 /* Кнопка выпадающего списка */
 .dropbtn {
-    background-color: #000000;
+    background-color: transparent;
     color: white;
-    padding: 16px;
+    padding: 30px 0;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -141,7 +149,7 @@ a {
   
   /* Кнопка выпадающего меню при наведении и фокусировке */
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #000000;
+    background-color: transparent;
   }
   
   /* Контейнер <div> - необходим для размещения выпадающего содержимого */
@@ -178,7 +186,7 @@ a {
 
 .header {
     position: relative;
-    min-height: 840px;
+    min-height: 900px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

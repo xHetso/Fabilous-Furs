@@ -11,10 +11,11 @@
 </head>
 
 <body>
-    
+    <section class="section__navbar">
+        <div class="container">
         <div class="navbar">
-            <div class="container navbar">
-            <div  class="dropdown">
+            
+            <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">
                     <div class="menu-btn">
                         <span></span>
@@ -46,6 +47,7 @@
             </ul>
             </div>
         </div>
+    </section>
     
     
 
@@ -70,6 +72,15 @@
             }
         }
         }
+        //скролл навбар
+        window.addEventListener('scroll', function() {
+        var section__navbar = document.querySelector('.section__navbar'); // выбираем элемент навбара
+        if (window.scrollY > 900) { // если высота прокрутки больше 900px
+            section__navbar.classList.add('scrolled'); // добавляем класс "scrolled"
+        } else {
+            section__navbar.classList.remove('scrolled'); // удаляем класс "scrolled"
+        }
+        });
       </script>
 
     <header class="header" style="background-image: url(img/header.png);">
