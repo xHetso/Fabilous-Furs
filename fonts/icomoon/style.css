@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4qd7lg');
-  src:  url('fonts/icomoon.eot?4qd7lg#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4qd7lg') format('truetype'),
-    url('fonts/icomoon.woff?4qd7lg') format('woff'),
-    url('fonts/icomoon.svg?4qd7lg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3k3kta');
+  src:  url('fonts/icomoon.eot?3k3kta#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3k3kta') format('truetype'),
+    url('fonts/icomoon.woff?3k3kta') format('woff'),
+    url('fonts/icomoon.svg?3k3kta#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,7 @@
 
 .icon-basket:before {
   content: "\e900";
+  color: #fff;
 }
 .icon-facebook:before {
   content: "\e901";
@@ -34,7 +35,7 @@
 }
 .icon-favorite:before {
   content: "\e902";
-  color: #858B95;
+  color: #858b95;
 }
 .icon-find:before {
   content: "\e903";
@@ -51,10 +52,13 @@
 .icon-logo .path2:before {
   content: "\e906";
   margin-left: -1.2978515625em;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
-.icon-whatsapp:before {
+.icon-phone:before {
   content: "\e907";
   color: #fff;
 }
-
+.icon-whatsapp:before {
+  content: "\e908";
+  color: #fff;
+}

@@ -11,6 +11,67 @@
 </head>
 
 <body>
+    
+        <div class="navbar">
+            <div class="container navbar">
+            <div  class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Ссылка 1</a>
+                  <a href="#">Ссылка 2</a>
+                  <a href="#">Ссылка 3</a>
+                </div>
+            </div>
+            <a href="#" class="logo">
+				<img src="img/LOGO_NAME.png" alt="">
+			</a>
+            <ul class="icons">
+                <li>
+                    <a href="#"><i class="icon-find fs-30"></i></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <a href="#"><i class="icon-basket fs-30"></i></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-favorite fs-30"></i></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    
+    
+
+
+      <script>
+        /* Когда пользователь нажимает на кнопку,
+        переключение между скрытием и отображением раскрывающегося содержимого */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Закройте выпадающее меню, если пользователь щелкает за его пределами
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+      </script>
+
     <header class="header" style="background-image: url(img/header.png);">
         <div class="container">
             <div class="row">
@@ -25,7 +86,9 @@
         </div>
     </header>
 
-    
+
+
+
     <section class="section collection">
         <div class="container">
             <div class="row">
@@ -58,7 +121,7 @@
                             </div>
                             <div>
                                 <a href="#">
-                                    <i class="icon-favorite"></i>
+                                    <i class="icon-favorite icon_product"></i>
                                 </a>
                             </div>
                         </div>
@@ -74,7 +137,7 @@
                             </div>
                             <div>
                                 <a href="#">
-                                    <i class="icon-favorite"></i>
+                                    <i class="icon-favorite icon_product"></i>
                                 </a>
                             </div>
                         </div>
@@ -100,7 +163,7 @@
         </div>
     </section>
 
-    <section class="section banner1">
+    <section class="section__collection">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -109,41 +172,209 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-5 align-items-center">
+                <div class="col-md-5">
                     <h2 class="collection_name1">
                         ШУБЫ И МЕХА
                     </h2>
                     <button class="btn__collection btn__collection-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
                 </div>
-                <div class="bg__image__banner1 bg__image__banner1__middle">
+                <div class="bg__image__banner1">
                     <img src="img/bg.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section banner1">
+    <section class="section__collection bannercollection2">
         <div class="container">
             <div class="row">
                 <div class="col-md-1">
-                    
+
                 </div>
-                <div class="col-md-5 align-items-center">
+                <div class="col-md-5">
                     <h2 class="collection_name1">
-                        ШУБЫ И МЕХА
+                        CКИДКИ ДО 90%
                     </h2>
                     <button class="btn__collection btn__collection-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
                 </div>
                 <div class="col-md-6">
                     <img src="img/categories2.png" alt="">
                 </div>
-                <div class="bg__image__banner1 bg__image__banner1__middle bg__image__banner1__right">
+                <div class="bg__image__banner1 bg__image__banner1__right">
                     <img src="img/bg.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="section bannerabout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="collection_name1">О компании</h2>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+                <div class="bg__image__banner3">
+                    <img src="img/about_bg.png" alt="">
+                </div>
+                <div class="bg__image__banner2">
+                    <img src="img/about.png" alt="">
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-5">
+                    <div class="collection__info">
+                        <p class="collection_name1">
+                            Добро пожаловать в наш интернет-магазин женских меховых шуб! Мы предлагаем широкий выбор качественных шуб из натурального меха, которые не только согреют вас в холодное время года, но и подчеркнут вашу женственность и стиль.
+                        </p>
+                        <button class="btn__collection btn__collection-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" section instagram__colection">
+        <div class="container">
+            <h1 class="instagram__colection__title section__title__center">Мы в Инстаграмме</h1>
+            <h5 class="instagram__title section__title__center">@fabilous__furs</h5>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="instagram__card">
+                        <img class="instagram__img__collection" src="img/product1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="instagram__card">
+                        <img class="instagram__img__collection" src="img/product2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="instagram__card">
+                        <img class="instagram__img__collection" src="img/product3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="instagram__card">
+                        <img class="instagram__img__collection" src="img/product4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" class="brand">
+                        <img src="img/icons/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer__menu">
+                        <li>
+                            <h5 class="footer__title">Меню</h5>
+                        </li>
+                        <li>
+                            <a href="#">Главное</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог товаров</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer__menu">
+                        <li>
+                            <h5 class="footer__title">Компания</h5>
+                        </li>
+                        <li>
+                            <a href="#">О нашей компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="#">Гарантия и качества</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer__menu">
+                        <li>
+                            <h5 class="footer__title">Товары</h5>
+                        </li>
+                        <li>
+                            <a href="#">Шубы из соболя</a>
+                        </li>
+                        <li>
+                            <a href="#">Шубы из шеншиллы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer__menu">
+                        <li>
+                            <h5 class="footer__title">Прочее</a>
+                        </li>
+                        <li>
+                            <a href="#">Рассрочка и кредит</a>
+                        </li>
+                        <li>
+                            <a href="#">Конкурсы</a>
+                        </li>
+                        <li>
+                            <a href="#">Возврат и обмен</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="footer__contacts">
+                        <li class="footer__title">Наши контакты</li>
+                        <li><i class="icon-phone"></i><a href="tel:+77777777777">+7 777 777 77 77</a></li>
+                        <li><a href="mailto:vip@housevip.ru">fabilousfurs@mail.ru</a></li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="#">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <a href="#" class="section__title__center">
+                                2023. Fabilous Furs. Все права защищены
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
