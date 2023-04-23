@@ -229,6 +229,127 @@ section.section__navbar {
 
 /*!header*/
 
+/*products*/
+
+.icon-favorite {
+    font-size: 44px;
+}
+
+.icon-favorite:hover:before{
+    content: "\e902";
+    color: black;
+}
+
+.btn__collection {
+    display: inline-block;
+    line-height: 1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    width: 100%;
+    border: none;
+    padding: 17px;
+    transition: all .09s ease-out;
+}
+
+.btn__collection-accent {
+    background-color: transparent;
+    width: 370px;
+    height: 75px;
+    border: 2px solid black;
+}
+
+.btn__collection-accent:hover {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+
+/*section*/
+
+.section {
+    position: relative;
+    margin: 120px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section__title {
+    margin-bottom: 80px;
+}
+
+.section__title__product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section__collection {
+    margin-top: 186px;
+}
+/*sort*/
+.product__sort {
+    display:flex;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:30px 65px;
+}
+
+.products__sort__1 {
+    display: flex;
+    gap: 45px;
+}
+
+.product__sort__2{
+    display:flex;
+    gap: 15px;
+}
+
+select{
+    border: none;
+}
+
+/*product*/
+.collection{
+    margin: 80px 0 0 0;
+}
+.product__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__img__collection {
+    width: 330px;
+    height: 495px;
+    margin-bottom: 25px;
+}
+
+.product__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.product__price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.product__card{
+    margin-bottom: 60px;
+}
+
 
 /*Footer*/
 
@@ -240,7 +361,6 @@ section.section__navbar {
 
 .footer {
     background-color: #161616;
-    margin: 60px 0 0 0;
     padding-top: 68px;
 }
 

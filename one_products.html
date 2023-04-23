@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabilous Furs</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/one_products.css">
 </head>
 
 <body>
@@ -24,10 +25,10 @@
                     </div>
                 </button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="/">Главная</a>
-                  <a href="/products.html">Продукты</a>
-                  <a href="/one_products.html">Один продукт</a>
-                  <a href="#">Контакты</a>
+                    <a href="/">Главная</a>
+                    <a href="/products.html">Продукты</a>
+                    <a href="/one_products.html">Один продукт</a>
+                    <a href="#">Контакты</a>
                 </div>
             </div>
             <a href="#" class="logo">
@@ -49,63 +50,47 @@
             </div>
         </div>
     </section>
-    
-    
 
-
-      <script>
-        /* Когда пользователь нажимает на кнопку,
-        переключение между скрытием и отображением раскрывающегося содержимого */
-        function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Закройте выпадающее меню, если пользователь щелкает за его пределами
-        window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-            }
-        }
-        }
-        //скролл навбар
-        window.addEventListener('scroll', function() {
-        var section__navbar = document.querySelector('.section__navbar'); // выбираем элемент навбара
-        if (window.scrollY > 900) { // если высота прокрутки больше 900px
-            section__navbar.classList.add('scrolled'); // добавляем класс "scrolled"
-        } else {
-            section__navbar.classList.remove('scrolled'); // удаляем класс "scrolled"
-        }
-        });
-      </script>
-
-    <header class="header" style="background-image: url(img/header.png);">
+    <section class="section section__one__products">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="header__content">
-                        <p class="header__title">КОЛЛЕКЦИЯ 2023</p>
-                        <h1 class="header__title2">ПОПУЛЯРНЫЕ МОДЕЛИ</h1>
-                        <button class="btn btn-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
+                <div class="col-md-6">
+                    <div class="product__presentation">
+                        <div class="images__smalls">
+                            <img class="images__small" src="img/product1.png" alt="">
+                            <img class="images__small" src="img/product2.png" alt="">
+                            <img class="images__small" src="img/product3.png" alt="">
+                        </div>
+                        <div class="images__big">
+                            <img class="images__big_presentation" src="img/product4.png" alt="">
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="one_products__title">Главная > Каталог ></p>
+                    <h3>Пальто из меха куницы (MD-652)</h3>
+                    <h3>3 370 000 ТГ.</h3>
+                    <p>Размер</p>
+
+                    <h4>Таблица Размеров</h4>
+                    <p>
+                        Мех: баргузинский соболь
+                        Цвет: натуральный
+                        Крашеный мех: нет
+                        Длина изделия: 115 см
+                        Застежка: шубные клипсы
+                        Подкладка: шелк 36%, ацетатный шелк 64%
+                    </p>
                 </div>
             </div>
         </div>
-    </header>
-
-
-
+    </section>
 
     <section class="section collection">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="section__title">КОЛЛЕКЦИЯ 2023</h1>
+                    <h1 class="section__title">ВЫ ПОСМОТРЕЛИ</h1>
                 </div>
                 <div class="col-md-3">
                     <div class="product__card">
@@ -175,116 +160,12 @@
         </div>
     </section>
 
-    <section class="section__collection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/categories1.png" alt="">
-                </div>
-                <div class="col-md-1">
+    
+                    
+                     
+                    
 
-                </div>
-                <div class="col-md-5">
-                    <h2 class="collection_name1">
-                        ШУБЫ И МЕХА
-                    </h2>
-                    <a href="products.html">
-                        <button class="btn__collection btn__collection-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
-                    </a>
-                </div>
-                <div class="bg__image__banner1">
-                    <img src="img/bg.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section__collection bannercollection2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1">
-
-                </div>
-                <div class="col-md-5">
-                    <h2 class="collection_name1">
-                        CКИДКИ ДО 90%
-                    </h2>
-                    <button class="btn__collection btn__collection-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/categories2.png" alt="">
-                </div>
-                <div class="bg__image__banner1 bg__image__banner1__right">
-                    <img src="img/bg.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section bannerabout">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h2 class="collection_name1">О компании</h2>
-                </div>
-                <div class="col-md-3">
-
-                </div>
-                <div class="col-md-6">
-
-                </div>
-                <div class="bg__image__banner3">
-                    <img src="img/about_bg.png" alt="">
-                </div>
-                <div class="bg__image__banner2">
-                    <img src="img/about.png" alt="">
-                </div>
-                <div class="col-md-1">
-
-                </div>
-                <div class="col-md-5">
-                    <div class="collection__info">
-                        <p class="collection_name1">
-                            Добро пожаловать в наш интернет-магазин женских меховых шуб! Мы предлагаем широкий выбор качественных шуб из натурального меха, которые не только согреют вас в холодное время года, но и подчеркнут вашу женственность и стиль.
-                        </p>
-                        <button class="btn__collection btn__collection-accent">ПЕРЕЙТИ В КАТАЛОГ</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class=" section instagram__colection">
-        <div class="container">
-            <h1 class="instagram__colection__title section__title__center">Мы в Инстаграмме</h1>
-            <h5 class="instagram__title section__title__center">@fabilous__furs</h5>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="instagram__card">
-                        <img class="instagram__img__collection" src="img/product1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="instagram__card">
-                        <img class="instagram__img__collection" src="img/product2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="instagram__card">
-                        <img class="instagram__img__collection" src="img/product3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="instagram__card">
-                        <img class="instagram__img__collection" src="img/product4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      
 
     <footer class="footer">
         <div class="container">
@@ -390,6 +271,27 @@
         </div>
     </footer>
 
+    <script>
+        /* Когда пользователь нажимает на кнопку,
+        переключение между скрытием и отображением раскрывающегося содержимого */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Закройте выпадающее меню, если пользователь щелкает за его пределами
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+      </script>
 </body>
 
 </html>
