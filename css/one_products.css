@@ -1,3 +1,7 @@
+.col {
+    padding: 0;
+    margin: 0;
+  }
 .one_products__title{
     color:black;
 }
@@ -21,4 +25,14 @@
 }
 .images__big_presentation{
     width: 100%;
+}
+.one_products__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #858B95;
+    margin-bottom: 28px;
 }
